@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MD Калькулятор</string>
+    <string name="navigation_drawer_open">Открыть окно навигации</string>
+    <string name="navigation_drawer_close">Закрыть окно навигации</string>
+    <string name="nav_header_title">Калькулятор</string>
+    <string name="nav_header_subtitle">Material Design</string>
+    <string name="nav_header_desc">Заголовок навигации</string>
+
+    <string name="menu_home">Калькулятор</string>
+    <string name="menu_save_res_button">Сохр. рез.</string>
+    <string name="about_developers">Разработчики</string>
+    <string name="about_developer3">Влад Филатов</string>
+    <string name="about_developer2">Алексей Елфимов</string>
+    <string name="about_developer1">Михаил Гуреев</string>
+    <string name="menu_serverDB">Серверная БД</string>
+    <string name="menu_localDB">Локальная БД</string>
+    <string name="menu_google_maps">OSM карты</string>
+    <string name="save_result_button">Сохранить результат</string>
+    <string name="results_coordinate_system">Координаты</string>
+    <string name="results_data_time">Время и дата:</string>
+    <string name="results_expression">Выражение:</string>
+    <string name="results_latitude">Широта:</string>
+    <string name="results_longitude">Долгота:</string>
+    <string name="results_result">Результат:</string>
+    <string name="results_show_button">Показать в OSM</string>
+
+    <!--    <string name="menu_share">Share</string>-->
+<!--    <string name="menu_send">Send</string>-->
+</resources>

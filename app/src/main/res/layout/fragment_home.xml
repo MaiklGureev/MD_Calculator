@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/text_home"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="8dp"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/MDCV0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/MDCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mtrl_card_spacing"
+                android:layout_weight="15"
+                app:cardElevation="@dimen/cardview_default_elevation">
+
+
+                <LinearLayout
+                    android:id="@+id/LL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/home_editText_expression"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="70"
+                        android:gravity="right"
+                        android:lines="2"
+                        android:text=""
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/home_editText_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="30"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:text="= 0.0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="85"
+                android:clipToPadding="false"
+                android:columnCount="4"
+                android:rowCount="5">
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_save"
+                    style="@style/ActionKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="3"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="@string/save_result_button" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_del"
+                    style="@style/ActionKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="Del" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_1"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_2"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_3"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_plus"
+                    style="@style/ActionKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="+" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_4"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_5"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_6"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="6" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_minus"
+                    style="@style/ActionKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="-" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_7"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="7" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_8"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="8" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_9"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="9" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_mul"
+                    style="@style/ActionKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="*" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_0"
+                    style="@style/NumKeysStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_dot"
+                    style="@style/NumKeysStyle"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="," />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/home_button_div"
+                    style="@style/ActionKeysStyle"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:text="/" />
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

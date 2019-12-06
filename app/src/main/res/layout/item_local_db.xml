@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mtrl_card_spacing"
+        android:layout_marginTop="@dimen/mtrl_card_spacing"
+        android:layout_marginRight="@dimen/mtrl_card_spacing"
+        app:cardElevation="@dimen/cardview_default_elevation">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="4"
+            android:rowCount="6"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/results_data_time"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="4"
+                android:layout_columnWeight="100"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_result_data_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10:00  29-11-2019"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="4"
+                android:layout_columnWeight="100"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/results_expression"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="30"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                    />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/item_result_expr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="7777777+7777777"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="fill"
+                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
+                    android:layout_columnWeight="70"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                    />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/results_result"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="30"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_result_res"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="999999999"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="70"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/results_coordinate_system"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="4"
+                android:layout_columnWeight="100"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/results_latitude"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="50"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_result_lat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="55.2222"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="50"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/results_longitude"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="50"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/item_result_lon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="44.1111"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="50"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                />
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/show_in_osm_button"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="fill"
+    android:layout_rowWeight="1"
+    android:layout_columnSpan="4"
+    android:layout_margin="7dp"
+    android:text="@string/results_show_button"
+    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+    />
+            </GridLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+

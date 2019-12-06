@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MD_Calculator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Calculator</string>
+    <string name="nav_header_subtitle">Material Design</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="menu_home">Calculator</string>
+    <string name="menu_localDB">Local DB SQLite</string>
+    <string name="menu_serverDB">Serever DB</string>
+    <string name="menu_google_maps">OSM Maps</string>
+
+
+    <string name="about_developer1">Mikhail Gureev</string>
+    <string name="about_developer2">Alexey Elfimov</string>
+    <string name="about_developer3">Vlad Philatov</string>
+
+    <string name="about_developers">Developers</string>
+    <string name="menu_save_res_button">Save result</string>
+    <string name="save_result_button">Save result</string>
+    <string name="results_expression">Expression:</string>
+    <string name="results_result">Result:</string>
+    <string name="results_data_time">Date/Time:</string>
+    <string name="results_latitude">Latitude:</string>
+    <string name="results_longitude">Longitude:</string>
+    <string name="results_coordinate_system">Coordinate system:</string>
+    <string name="results_show_button">Show in OSM</string>
+
+
+    <!--    <string name="menu_share">Share</string>-->
+<!--    <string name="menu_send">Send</string>-->
+
+</resources>

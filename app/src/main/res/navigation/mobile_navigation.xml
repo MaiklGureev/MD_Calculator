@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.gureev.md_calculator.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.gureev.md_calculator.ui.local_db.LocalDBFragment"
+        android:label="@string/menu_localDB"
+        tools:layout="@layout/fragment_local_db" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.gureev.md_calculator.ui.server_db.ServerDBFragment"
+        android:label="@string/menu_serverDB"
+        tools:layout="@layout/fragment_server_db" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.gureev.md_calculator.ui.maps.MapsFragment"
+        android:label="@string/menu_google_maps"
+        tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.gureev.md_calculator.ui.developers.DevelopersFragment"
+        android:label="@string/about_developers"
+        tools:layout="@layout/fragment_developers" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_share"-->
+<!--        android:name="com.gureev.md_calculator.ui.share.MapsFragment"-->
+<!--        android:label="@string/menu_share"-->
+<!--        tools:layout="@layout/fragment_maps" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_send"-->
+<!--        android:name="com.gureev.md_calculator.ui.send.SendFragment"-->
+<!--        android:label="@string/menu_send"-->
+<!--        tools:layout="@layout/fragment_send" />-->
+</navigation>

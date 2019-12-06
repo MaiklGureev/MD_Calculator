@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "245145048237",
+    "firebase_url": "https://md-calculator.firebaseio.com",
+    "project_id": "md-calculator",
+    "storage_bucket": "md-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245145048237:android:f21c33d0f7182d9c73e224",
+        "android_client_info": {
+          "package_name": "com.gureev.md_calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245145048237-8i2jm8h5qoatqlq6nknnf3c57es9srnq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gureev.md_calculator",
+            "certificate_hash": "33a117fa7406857283aec6bc2dc60dc0a6fde213"
+          }
+        },
+        {
+          "client_id": "245145048237-mpas29un6rsivtehnpojkc48ref6dmj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDy79RV49DFJ7rrcvBJq2EM-seNWAh24uI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245145048237-mpas29un6rsivtehnpojkc48ref6dmj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
