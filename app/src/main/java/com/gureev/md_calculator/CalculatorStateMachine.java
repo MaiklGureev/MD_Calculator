@@ -237,7 +237,7 @@ public class CalculatorStateMachine implements Serializable {
             }
 
             case st2: {
-                if (numbers.contains(in) & (stringA.length() < 7)) {
+                if (numbers.contains(in) && (stringA.length() < 7)) {
                     stringA.append(in);
                     state = EnumState.st2;
                 }
@@ -257,7 +257,7 @@ public class CalculatorStateMachine implements Serializable {
             }
 
             case st3: {
-                if (numbers.contains(in) & (stringA.length() < 7)) {
+                if (numbers.contains(in) && (stringA.length() < 7)) {
                     stringA.append(in);
                     state = EnumState.st3;
                 }
@@ -274,7 +274,7 @@ public class CalculatorStateMachine implements Serializable {
 
             case st4: {
 
-                if (in == "-" & opertor != "") {
+                if (in == "-" && opertor != "") {
                     stringB.append("-");
                     state = EnumState.st5;
                     break;
@@ -292,7 +292,7 @@ public class CalculatorStateMachine implements Serializable {
                     state = EnumState.st6;
                     CalculateExpression(stringA, stringB, opertor);
                 }
-                if (in == "del" & stringB.length() != 0) {
+                if (in == "del" && stringB.length() != 0) {
                     delCharB();
                     state = EnumState.st4;
                 }
@@ -318,7 +318,7 @@ public class CalculatorStateMachine implements Serializable {
             }
 
             case st6: {
-                if (numbers.contains(in) & (stringB.length() < 7)) {
+                if (numbers.contains(in) && (stringB.length() < 7)) {
                     stringB.append(in);
                     state = EnumState.st6;
                     CalculateExpression(stringA, stringB, opertor);

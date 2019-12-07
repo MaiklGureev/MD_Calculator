@@ -23,6 +23,7 @@
     <string name="results_longitude">Долгота:</string>
     <string name="results_result">Результат:</string>
     <string name="results_show_button">Показать в OSM</string>
+    <string name="toast_message">Результат сохранён!</string>
 
     <!--    <string name="menu_share">Share</string>-->
 <!--    <string name="menu_send">Send</string>-->

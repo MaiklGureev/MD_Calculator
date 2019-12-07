@@ -27,6 +27,7 @@
     <string name="results_longitude">Longitude:</string>
     <string name="results_coordinate_system">Coordinate system:</string>
     <string name="results_show_button">Show in OSM</string>
+    <string name="toast_message">Result saved!</string>
 
 
     <!--    <string name="menu_share">Share</string>-->

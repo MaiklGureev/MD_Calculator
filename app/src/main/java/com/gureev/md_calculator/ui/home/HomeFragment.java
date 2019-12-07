@@ -2,15 +2,14 @@ package com.gureev.md_calculator.ui.home;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -134,9 +133,9 @@ public class HomeFragment extends Fragment {
                 contentValues.put(dbHelper.lat, MyLocationListener.getMyLatitude());
                 contentValues.put(dbHelper.lon, MyLocationListener.getMyLongitude());
                 database.insert(dbHelper.TABLE_MAIN, null, contentValues);
-                Log.d("Database Operations", "One raw inserted");
+                //Log.d("Database Operations", "One raw inserted");
 
-                Cursor cursor = database.query(DBHelper.TABLE_MAIN, null, null, null, null, null, null);
+                //Cursor cursor = database.query(DBHelper.TABLE_MAIN, null, null, null, null, null, null);
 
 //                if (cursor.moveToFirst()) {
 //                    int idIndex = cursor.getColumnIndex(DBHelper.key);
@@ -150,10 +149,11 @@ public class HomeFragment extends Fragment {
 //                } else
 //                    Log.d("mLog","0 rows");
 
-                cursor.close();
+                //cursor.close();
                 //contentValues.clear();
 
                 sendDataOnServer();
+                Toast.makeText(v.getContext(),R.string.toast_message,Toast.LENGTH_SHORT).show();
             }
         });
 
