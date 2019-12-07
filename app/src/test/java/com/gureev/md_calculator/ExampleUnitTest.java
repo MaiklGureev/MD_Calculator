@@ -12,6 +12,11 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        assertEquals(10,5+5);
+
+        ResOfCalc resOfCalc =  new ResOfCalc();
+        resOfCalc.expr = "10+10";
+        assertEquals(resOfCalc.getExpr(), "10+10");
+
     }
 }
