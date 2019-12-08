@@ -20,6 +20,7 @@ public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
         // Context of the app under test.
+        //тест взаимодействия с системой
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.gureev.md_calculator", appContext.getPackageName());
     }

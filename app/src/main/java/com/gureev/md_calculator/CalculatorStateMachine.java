@@ -81,7 +81,7 @@ public class CalculatorStateMachine implements Serializable {
     public String getExpr() {
 
         String expr = "";
-        expr = stringA.toString() +" "+ opertor + " " + stringB.toString();
+        expr = stringA.toString() + " " + opertor + " " + stringB.toString();
         return expr;
     }
 
@@ -90,11 +90,10 @@ public class CalculatorStateMachine implements Serializable {
         String r = "";
         if (stringA.length() == 0) {
             r = "0.0";
-        } else if (stringB.length() == 0 || stringB.toString()=="-") {
+        } else if (stringB.length() == 0 || stringB.toString() == "-") {
             r = stringA.toString();
-        }
-        else {
-            r =stringBuilderResult.toString();
+        } else {
+            r = stringBuilderResult.toString();
         }
         return r;
     }
@@ -117,10 +116,9 @@ public class CalculatorStateMachine implements Serializable {
 
         if (stringA.length() == 0) {
             result = "= 0.0";
-        } else if (stringB.length() == 0 || stringB.toString()=="-") {
+        } else if (stringB.length() == 0 || stringB.toString() == "-") {
             result = "= " + stringA.toString();
-        }
-        else {
+        } else {
             result = "= " + stringBuilderResult.toString();
         }
 
@@ -369,7 +367,7 @@ public class CalculatorStateMachine implements Serializable {
                     delCharSign();
                 }
                 if (in == "del" & stringB.length() != 0) {
-                    lastState = EnumState.st6;
+                    lastState = EnumState.st7;
                     delCharB();
                 }
                 break;
@@ -381,7 +379,12 @@ public class CalculatorStateMachine implements Serializable {
     }
 
     private void delCharA() {
-        if (stringA.length() != 0) {
+
+        char dot = '.';
+        if (stringA.charAt(stringA.length()-1) == dot) {
+            stringA.setLength(stringA.length() - 1);
+            state = EnumState.st2;
+        } else if (stringA.length() != 0) {
             stringA.setLength(stringA.length() - 1);
             state = lastState;
         }
@@ -392,7 +395,11 @@ public class CalculatorStateMachine implements Serializable {
     }
 
     private void delCharB() {
-        if (stringB.length() != 0) {
+        char dot = '.';
+        if (stringB.charAt(stringB.length()-1) == dot) {
+            stringB.setLength(stringB.length() - 1);
+            state = EnumState.st6;
+        } else if (stringB.length() != 0) {
             stringB.setLength(stringB.length() - 1);
             CalculateExpression(stringA, stringB, opertor);
             state = lastState;
@@ -410,7 +417,7 @@ public class CalculatorStateMachine implements Serializable {
 
 
     private void CalculateExpression(StringBuilder stringA, StringBuilder stringB, String operator) {
-        if (stringB.length() != 0 && operator != "" && stringA.length() != 0 ){
+        if (stringB.length() != 0 && operator != "" && stringA.length() != 0) {
             try {
                 a = Double.parseDouble(stringA.toString());
                 b = Double.parseDouble(stringB.toString());
@@ -434,8 +441,7 @@ public class CalculatorStateMachine implements Serializable {
                         break;
                     }
                 }
-            }
-            catch (Throwable e){
+            } catch (Throwable e) {
                 res = a;
             }
         }

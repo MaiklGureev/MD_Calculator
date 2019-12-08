@@ -11,6 +11,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -31,6 +32,7 @@ public class HomeFragmentTest {
 
     @Test
     public void testVievComponts() {
+        //тест интерфейса
         onView(withId(R.id.home_button_plus))
                 .check(matches(isDisplayed()));
         onView(withId(R.id.home_button_minus))
@@ -69,5 +71,7 @@ public class HomeFragmentTest {
                 .check(matches(isDisplayed()));
         onView(withId(R.id.home_button_9))
                 .check(matches(isDisplayed()));
+
+        onView(withId(R.id.home_button_del)).perform(click());
     }
 }

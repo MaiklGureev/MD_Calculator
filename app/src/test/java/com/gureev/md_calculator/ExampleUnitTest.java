@@ -14,9 +14,9 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(10,5+5);
 
+        //тест модели данных
         ResOfCalc resOfCalc =  new ResOfCalc();
         resOfCalc.expr = "10+10";
         assertEquals(resOfCalc.getExpr(), "10+10");
-
     }
 }
