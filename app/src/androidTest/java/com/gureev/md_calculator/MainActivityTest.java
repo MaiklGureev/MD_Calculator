@@ -31,7 +31,7 @@ public class MainActivityTest {
                     "android.permission.WRITE_EXTERNAL_STORAGE");
 
     @Test
-    public void mainTest() {
+    public void MainActivityTest() {
 
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.gureev.md_calculator", appContext.getPackageName());
