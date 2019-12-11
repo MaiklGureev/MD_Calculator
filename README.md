@@ -11,7 +11,7 @@
 Особенности:
 - калькулятор разработан с использованием Finite-state machine
 - material design
-- использованы OpenStreetMap
+- использованы OpenStreetMaps
 - результаты вычислений с геопозицией храняться в SQLite и FireBase
 
 
